@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "deploy": "gh-pages -d out",
-    "predeploy": "next build && next export",
+    "predeploy": "next build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
