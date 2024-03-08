@@ -5,7 +5,7 @@
   "homepage": "https://jdy4236.github.io/blg/",
   "scripts": {
     "deploy": "gh-pages -d out",
-    "predeploy": "next build",
+    "predeploy": "next build && next export",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
