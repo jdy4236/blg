@@ -5,7 +5,7 @@
   "homepage": "https://jdy4236.github.io/blg/",
   "scripts": {
     "deploy": "gh-pages -d out",
-    "predeploy": "npm run build && next export && touch out/.nojekyll && touch out/_next/.nojekyll",
+    "predeploy": "npm run build && touch out/.nojekyll && touch out/_next/.nojekyll",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
