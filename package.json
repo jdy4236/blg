@@ -2,6 +2,7 @@
   "name": "blg",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jdy4236.github.io/blg/",
   "scripts": {
     "deploy": "gh-pages -d out",
     "predeploy": "next build",
