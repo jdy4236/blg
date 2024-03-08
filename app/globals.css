@@ -1,5 +1,5 @@
 body {
-    margin : 0;
+    margin-left: 200px; 
     background-color: #303030;
     color : white
 }
@@ -13,21 +13,57 @@ body {
     text-align: center;
 }
 
-.food {
-    margin: 20px auto;
-    width: 200px;
-    background: white;
-    color: black;
+.post-view {
+    width: 80%;
+    margin: 0 auto;
     padding: 20px;
-    border-radius: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.post-view h4 {
+    margin-bottom: 20px;
+}
+
+.post-text {
+    color: white;
 }
 
 .navbar {
-    background: white;
-    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 70px;
+    background-color: #696969;
+    padding: 10px;
+    overflow: auto;
+    display: flex; /* flexbox 레이아웃 사용 */
+    flex-direction: column; /* 세로 방향으로 아이템 배치 */
+    justify-content: center; /* 세로 방향으로 가운데 정렬 */
+    align-items: center; /* 가로 방향으로 가운데 정렬 */
+}
+
+.navbar p {
+    transform: translateY(-600%);
+    margin : 5px;
 }
 
 .navbar a {
     margin-right: 10px;
     text-decoration: none;
 }
+
+/** 하이퍼링크 색상 변경 안되도록 */
+a:link, a:visited {
+  color: #000; /* 원하는 색상 코드로 변경하세요 */
+  text-decoration: none; /* 밑줄 제거 */
+}
+
+a:hover, a:active {
+  color: #000; /* 원하는 색상 코드로 변경하세요 */
+  text-decoration: none; /* 밑줄 제거 */
+}
+/** 하이퍼링크 색상 변경 안되도록 */

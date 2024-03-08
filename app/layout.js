@@ -14,8 +14,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
             <div className="navbar">
-              <Link href="/">홈</Link>
-              <Link href="/list">List 15</Link>
+              <p><Link href="/" style={{ display: 'block', marginBottom: '10px', color: '#ffffff' }}>HOME</Link></p>
+              <p><Link href="/skills" style={{ display: 'block', marginBottom: '10px', color: '#ffffff' }}>SKILLS</Link></p>
+              <p><Link href="/posts" style={{ display: 'block', marginBottom: '10px', color: '#ffffff' }}>POSTS</Link></p>
             </div>
             {children}
       </body>
