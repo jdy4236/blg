@@ -3,24 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://jdy4236.github.io/blg/",
-   "scripts": {
+  "scripts": {
+    "deploy": "gh-pages -d out",
+    "predeploy": "npm run build",
     "dev": "next dev",
-    "prebuild": "rimraf .next",
     "build": "next build",
-
-    "preexport": "rimraf out",
-    "export": "next export",
-    "touch": "touch out/.nojekyll",
-    "posttouch": "touch out/_next/.nojekyll",
-
     "start": "next start",
-    "lint": "next lint",
-    "lint:fix": "eslint --fix ./src",
-    "format": "prettier --check --ignore-path .gitignore .",
-    "format:fix": "prettier --write --ignore-path .gitignore .",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "prepare": "husky install"
+    "lint": "next lint"
   },
   "dependencies": {
     "next": "14.1.2",
