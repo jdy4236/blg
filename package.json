@@ -8,7 +8,12 @@
     "predeploy": "next build",
     "dev": "next dev",
     "build": "next build",
-    "export" : "next export",
+
+    "preexport": "rimraf out",
+    "export": "next export",
+    "touch": "touch out/.nojekyll",
+    "posttouch": "touch out/_next/.nojekyll",
+
     "start": "next start",
     "lint": "next lint"
   },
