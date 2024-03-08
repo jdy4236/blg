@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 
 const debug = process.env.NODE_ENV !== "production";
-const repository = "https://jdy4236.github.io/blg/";
+const repository = "blg";
 
 const nextConfig = {
     reactStrictMode: true,
