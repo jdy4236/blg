@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
       <body>
             <div className="navbar">
               <Link href="/">홈</Link>
-              <Link href="/list">List2</Link>
+              <Link href="/list">List3</Link>
             </div>
             {children}
       </body>
